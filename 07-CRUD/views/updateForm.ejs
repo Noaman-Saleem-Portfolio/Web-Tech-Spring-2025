@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/book">Products</a>
+
+    <h1>Update Book Data</h1>
+
+    <form action="/book/:id?_method=put" method="post">
+        <input type="text" placeholder="title" name="title" value=<%= book.title %> >
+        <input type="number" placeholder="price" name="price" value=<%= book.price %>>
+        <input type="text" placeholder="author" name="author" value=<%= book.author %>>
+        <input type="number" placeholder="numOfPages" name="numOfPages" value=<%= book.numOfPages %>>
+        <button>Update</button>
+    </form>
+</body>
+</html>
